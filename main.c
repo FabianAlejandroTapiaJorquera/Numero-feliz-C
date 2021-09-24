@@ -19,6 +19,8 @@ int cuadrado(int numero){
 
 int feliz(int numero){
     int i = 0, aux = numero;
+    // cuando un número no es feliz entra en un ciclo
+    // el for representa la cantidad máxima de iteraciones a realizar para comprobar si es feliz
     for(i; i<10; i++){
         int digitos = contadorDigitos(aux), sumador = 0;
         while(digitos > 0){
@@ -39,7 +41,6 @@ int feliz(int numero){
 }
 
 int main () {
-    // printf("%d tiene %d digitos", -1, contadorDigitos(-1));
-    feliz(2);
+    feliz(12);
     return 0;
 }
